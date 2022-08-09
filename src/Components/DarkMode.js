@@ -10,7 +10,7 @@ function DarkMode() {
 	}, [theme]);
 		
 	return (
-		<div>
+		<div className='md:container mx-auto p-5' >
 			<h3 className={theme ? 'sr-only' : null}>light</h3> 
 
 			<input

@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-color: #0A0A34;
+    color: white;
+}
+
+/**  Form & Input  **/
+
+input,
+button {
+	display: block;
+}
+input {
+    color: grey
+}
+.clear-btn {
+	position: absolute;
+	top: .8rem;
+	right: 0;
+	width: max-content;
+	font-size: 1.8rem;
+	background: transparent;
+	box-shadow: none;
+	z-index: 95;
+}
+input[type="file"] {
+	padding-block: .5rem;
+}
+input[type="checkbox"] {
+	width: max-content;
+	display: inline-block;
+	margin-right: 1rem;
+}
+input[type="button"] {
+	display: inline;
+	padding: .3rem;
+	width: 4rem;
+	height: 2rem;
+	margin-right: 1rem;
+}
+label {
+	display: inline;
+}
+.error-msg {
+	color: var(--red);
+	font-weight: 700;
+	padding-left: 1rem;
+}
+.success-msg {
+	color: #008000;
+	font-weight: 700;
+	padding-top: 1.5rem;
+	text-align: center;
+}
+button[type="submit"] {
+
+}
+button[type="submit"] > img {
+	max-width: 1.5rem;
+	animation: pulse infinite 1s alternate;
+}
+
+.sketch-picker {
+	position: absolute !important;
+	z-index: 9;
+}
+
+.card {
+	border-radius: 1.5rem;
+	text-align: center;
+	background-color: var(--white);
+	box-shadow: var(--shadow);
+}
+.card > * {
+	margin-bottom: 1.5rem;
+}
+.card .qr-box {
+
+	border-radius: .8rem;
+	overflow: hidden;
+}
+
+.card .qr-box canvas {
+	border-radius: .8rem;
+	transition: var(--cubic-bezier);
+	z-index: 98;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 90%;
+        margin: 5% auto;
+    }
+    .main {
+      display: block;
+    }
+    
+  }

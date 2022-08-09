@@ -21,13 +21,8 @@ function App() {
 	}
 
 	return (
-		<>
-			<header>
-				<DarkMode />
-			</header>
-
-			<main>
-				<QrForm
+		<div className='main flex justify-around ' >
+        <QrForm
 					qrRef={qrRef}
 					url={url}
 					qrColor={qrColor}
@@ -40,7 +35,6 @@ function App() {
 					setNoImg={setNoImg}
 					handleQrReset={handleQrReset}
 				/>
-
 				<QrCard
 					qrRef={qrRef}
 					url={url}
@@ -49,8 +43,8 @@ function App() {
 					customImg={customImg}
 					noImg={noImg}
 				/>
-			</main>
-		</>
+
+		</div>
 	);
 }
 

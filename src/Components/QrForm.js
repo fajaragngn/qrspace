@@ -38,7 +38,6 @@ function QrForm({ qrRef, url, qrColor, qrBgColor, noImg, setUrl, setQrColor, set
 	return(
 		<form onSubmit={downloadQrCode}>
 			<h1>Generate your Qr Code</h1>
-			
 			<Url
 				url={url}
 				setUrl={setUrl}
@@ -64,10 +63,8 @@ function QrForm({ qrRef, url, qrColor, qrBgColor, noImg, setUrl, setQrColor, set
 				setNoImg={setNoImg}
 				setCustomImg={setCustomImg}
 			/>
-
 			<button type="submit">
 				<span>Download now</span>
-				<img src="./logo-apple-icon192.png" alt="Travolgi" />
 			</button>
 			
 			{downloaded &&

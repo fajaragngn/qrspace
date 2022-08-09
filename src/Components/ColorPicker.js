@@ -6,8 +6,9 @@ function ColorPicker({ id, label, customColor, handleQrCustom }) {
 			handleShowPicker = ()=> setShowPicker(!showPicker);
 
 	return(
-		<div>
+		<div >
 			<input
+                className='inline mr-3 h-10 w-10 mt-5 '
 				id={id}
 				name={id}
 				aria-label={id}

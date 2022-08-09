@@ -9,17 +9,18 @@ function Url({ url, setUrl, httpRgx }) {
 	}
 
 	return(
-		<div className="relative">
+		<div>
 			<label htmlFor="url">Enter your URL</label>
 			
 			<input
+                className="pl-3"
 				id="url"
 				name="url"
 				type="text"
 				value={url}
 				onChange={handleUrl}
 				onBlur={handleValidateUrl}
-				placeholder="Add URL for Qr Code generation"
+				placeholder="Ex : awikwok.com"
 				required
 			/>
 			

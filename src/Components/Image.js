@@ -10,7 +10,7 @@ function Image({ noImg, setNoImg, setCustomImg }) {
 	}
 
 	return (
-		<>
+		<div>
 			<label htmlFor="file">Upload custom image</label>		
 			<input
 				id="file"
@@ -30,7 +30,7 @@ function Image({ noImg, setNoImg, setCustomImg }) {
 				onClick={()=>setNoImg(!noImg)}
 			/>
 			<label htmlFor="noImg">Tanpa Gambar</label>
-		</>
+		</div>
 	);
 }
 

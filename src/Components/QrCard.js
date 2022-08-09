@@ -10,14 +10,15 @@ function QrCard({ qrRef, url, bgColor, qrColor, customImg, noImg }) {
 			imgCustom = './logo-apple-icon192.png';
 
 	return (
-		<article className="card">
+		<div className="card ">
 			<div className="qr-box"
 				ref={qrRef}
 				style={{ backgroundColor: bgColor }}>
 			
 				<QrCode
+                    className='qr-code'
 					size={250}
-					value={url ? url : 'https://travolgi.com'}
+					value={url ? url : 'https://bukalapak.com'}
 					bgColor={bgColor}
 					fgColor={qrColor}
 					level='H'
@@ -31,9 +32,8 @@ function QrCard({ qrRef, url, bgColor, qrColor, customImg, noImg }) {
 				/>
 
 			</div>
-			<h2 className="word-wrap">{url ? url : 'travolgi.com'}</h2>
-			<p>Enter the URL of your site and create your custom Qr Code in a few seconds with a few clicks.</p>
-		</article>
+			<h2 className="word-wrap">{url ? url : 'bukalapak.com'}</h2>
+		</div>
 	);
 }
 
