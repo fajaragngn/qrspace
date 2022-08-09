@@ -1,5 +1,5 @@
 # QrSpace
 
 ## Tech Stack
-[React.Js]()
-[Tailwind CSS]()
+- [React.Js]()
+- [Tailwind CSS]()
