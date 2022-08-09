@@ -10,8 +10,8 @@ function Image({ noImg, setNoImg, setCustomImg }) {
 	}
 
 	return (
-		<div>
-			<label htmlFor="file">Upload custom image</label>		
+		<div className="mt-5 mb-5" >
+			<label htmlFor="file">Upload logo</label>		
 			<input
 				id="file"
 				name="file"
@@ -29,7 +29,7 @@ function Image({ noImg, setNoImg, setCustomImg }) {
 				checked={noImg}
 				onClick={()=>setNoImg(!noImg)}
 			/>
-			<label htmlFor="noImg">Tanpa Gambar</label>
+			<label className="text-sm font-sans tracking-normal" htmlFor="noImg">Tanpa gambar logo</label>
 		</div>
 	);
 }

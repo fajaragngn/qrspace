@@ -18,7 +18,7 @@ function QrCard({ qrRef, url, bgColor, qrColor, customImg, noImg }) {
 				<QrCode
                     className='qr-code'
 					size={250}
-					value={url ? url : 'https://bukalapak.com'}
+					value={url ? url : 'https://fajarspace.netlify.app'}
 					bgColor={bgColor}
 					fgColor={qrColor}
 					level='H'
@@ -32,7 +32,7 @@ function QrCard({ qrRef, url, bgColor, qrColor, customImg, noImg }) {
 				/>
 
 			</div>
-			<h2 className="word-wrap">{url ? url : 'bukalapak.com'}</h2>
+			<h2 className="word-wrap">{url ? url : 'qrspace.site'}</h2>
 		</div>
 	);
 }

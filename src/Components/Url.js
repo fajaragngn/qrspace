@@ -9,11 +9,11 @@ function Url({ url, setUrl, httpRgx }) {
 	}
 
 	return(
-		<div>
-			<label htmlFor="url">Enter your URL</label>
+		<div className="mt-5" >
+			<label htmlFor="url">Masukkan URL</label>
 			
 			<input
-                className="pl-3"
+                className="px-1 py-3 pt-1 pb-1 border border-white-600 shadow-lg max-w-3xl"
 				id="url"
 				name="url"
 				type="text"

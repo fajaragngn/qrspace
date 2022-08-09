@@ -5,7 +5,6 @@ import QrCard from './Components/QrCard';
 
 function App() {
 	const qrRef = useRef();
-
 	const [url, setUrl] = useState(''),
 			[qrColor, setQrColor] = useState('#ffffff'),
 			[qrBgColor, setQrBgColor] = useState('#2c7dfa'),
@@ -21,7 +20,7 @@ function App() {
 	}
 
 	return (
-		<div className='main flex justify-around ' >
+		<div className='main flex justify-start' >
         <QrForm
 					qrRef={qrRef}
 					url={url}

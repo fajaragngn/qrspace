@@ -21,10 +21,10 @@ function QrForm({ qrRef, url, qrColor, qrBgColor, noImg, setUrl, setQrColor, set
 	const downloadQrCode = e => {
 		e.preventDefault();
 
-		const qrCanvas = qrRef.current.querySelector('canvas'),
-				qrImage = qrCanvas.toDataURL("image/png"),
-				qrAnchor = document.createElement('a'),
-				fileName = url.replace(httpRgx, '').trim();
+	const qrCanvas = qrRef.current.querySelector('canvas'),
+		qrImage = qrCanvas.toDataURL("image/png"),
+		qrAnchor = document.createElement('a'),
+		fileName = url.replace(httpRgx, '').trim();
 		qrAnchor.href = qrImage;
 		qrAnchor.download = fileName+'_QrCode.png';
 		document.body.appendChild(qrAnchor);
@@ -36,8 +36,7 @@ function QrForm({ qrRef, url, qrColor, qrBgColor, noImg, setUrl, setQrColor, set
 	}
 
 	return(
-		<form onSubmit={downloadQrCode}>
-			<h1>Generate your Qr Code</h1>
+		<form className='' onSubmit={downloadQrCode}>
 			<Url
 				url={url}
 				setUrl={setUrl}
@@ -63,8 +62,8 @@ function QrForm({ qrRef, url, qrColor, qrBgColor, noImg, setUrl, setQrColor, set
 				setNoImg={setNoImg}
 				setCustomImg={setCustomImg}
 			/>
-			<button type="submit">
-				<span>Download now</span>
+			<button className='border border-white-600 shadow-lg p-2 mb-10 text-black-200 bg-black' type="submit">
+				<span>Download</span>
 			</button>
 			
 			{downloaded &&
