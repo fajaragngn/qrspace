@@ -1,5 +1,5 @@
-# Timeline
+# QrSpace
 
-cd timeline
-
-npm start
+## Tech Stack
+[React.Js]()
+[Tailwind CSS]()
